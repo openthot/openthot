@@ -3,131 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenThot | Building the Future of Knowledge</title>
-    <meta name="description" content="OpenThot is a multi-service platform for music, publishing, and research. Dedicated to openness, creativity, and structured knowledge.">
-    <link rel="stylesheet" href="styles.css">
+    <title>OpenThot | AI Mentorship for Creators</title>
+    <meta name="description" content="AI-driven mentorship platform for serious creators. Turn ideas into structured output and consistent growth.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header class="site-header">
-        <div class="container header-content">
+        <div class="container header-inner">
             <a href="#" class="logo">OpenThot</a>
             
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+            <button class="mobile-toggle" aria-label="Menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
 
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="#platforms">Products</a></li>
-                    <li><a href="#vision">Research</a></li>
-                    <li><a href="#vision">Blog</a></li>
-                    <li><a href="#vision">About</a></li>
-                </ul>
+            <nav class="nav-links">
+                <a href="#concept" class="nav-item">Mentorship</a>
+                <a href="#how" class="nav-item">How It Works</a>
+                <a href="#audience" class="nav-item">Creators</a>
+                <a href="https://forms.gle/REPLACE_LATER" class="btn btn-primary">Apply</a>
             </nav>
-            
-            <a href="https://forms.gle/REPLACE_LATER" class="btn btn-sm early-access-btn-header">Join Early Access</a>
         </div>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="container hero-content">
-                <h1 class="hero-title">Structured Knowledge for a Complex World.</h1>
-                <p class="hero-subtitle">
-                    OpenThot is building a new generation of platforms for creativity, research, and publishing. 
-                    We believe in tools that empower, not distact.
-                </p>
-                <div class="hero-cta-group">
-                    <a href="https://forms.gle/REPLACE_LATER" class="btn btn-primary">Join Early Access</a>
-                    <p class="hero-meta">Limited spots available for our beta program.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="philosophy-section">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="bg-glow"></div>
             <div class="container">
-                <div class="philosophy-card">
-                    <h2>Not a Search Engine. A Knowledge Engine.</h2>
-                    <p>
-                        The internet is noisy. We're building quiet, powerful tools that help you focus on what matters: 
-                        creating music, sharing deep thoughts, and organizing complex research. 
-                        No algorithms chasing engagement—just pure utility.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="platforms" class="platforms-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Our Ecosystem</h2>
-                    <p>A unified suite of tools designed to work together.</p>
-                </div>
-                
-                <div class="platforms-grid">
-                    <article class="platform-card">
-                        <div class="icon-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
-                        </div>
-                        <h3>Music</h3>
-                        <p>A pristine environment for high-fidelity audio distribution and discovery, putting artists first.</p>
-                    </article>
-
-                    <article class="platform-card">
-                        <div class="icon-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                        </div>
-                        <h3>Publishing</h3>
-                        <p>Long-form blogging and journalism without the clutter. Read and write in peace.</p>
-                    </article>
-
-                    <article class="platform-card">
-                        <div class="icon-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        </div>
-                        <h3>Research</h3>
-                        <p>Advanced tools for aggregating sources, citing papers, and building knowledge graphs.</p>
-                    </article>
-
-                    <article class="platform-card future-card">
-                        <div class="icon-box">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M2 12h20"></path></svg>
-                        </div>
-                        <h3>Future Services</h3>
-                        <p>We are constantly exploring new ways to expand human capability through software.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="vision" class="vision-section">
-            <div class="container vision-content">
-                <h2>The Long View</h2>
+                <h1>Build Like a Creator.<br>Think Like a System.</h1>
                 <p>
-                    Technology should serve humanity, not consume it. We are building for the next decade, not the next news cycle.
-                    Our mission is to create a digital environment that respects your attention and amplifies your intellect.
+                    OpenThot is an AI-driven mentorship platform that helps creators turn raw ideas into clear thinking, consistent output, and long-term growth — without burnout or guesswork.
+                </p>
+                <a href="https://forms.gle/REPLACE_LATER" class="btn btn-primary">Apply for Mentorship</a>
+                <div class="hero-meta">Limited early access · Reviewed applications only</div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <div class="social-proof">
+            <div class="container">
+                <p class="social-text">Trusted by consistent creators across writing, video, and research.</p>
+            </div>
+        </div>
+
+        <!-- Concept / What We Do -->
+        <section id="concept" class="concept">
+            <div class="container text-center">
+                <h2>Mentorship, Rebuilt for the AI Era</h2>
+                <p class="mx-auto" style="max-width: 600px;">
+                    Most creators don’t fail from lack of talent. They fail from lack of structure, feedback, and direction.
+                    <br><br>
+                    OpenThot combines AI intelligence with mentorship frameworks to help you clarify what to build and execute consistently.
                 </p>
             </div>
         </section>
 
+        <!-- How It Works Grid -->
+        <section id="how" class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Clarity</h3>
+                    <p>AI helps break ideas into structured plans and clear next steps, removing the paralysis of "what do I do next?"</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Guidance</h3>
+                    <p>Mentorship logic adapts to your goals, niche, and creative style. Feedback that understands context, not generic advice.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Compounding</h3>
+                    <p>Build systems that help your work grow in value over time. Focus on leverage, not just the next post.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience -->
+        <section id="audience" class="audience">
+            <div class="container text-center">
+                <h2>Designed for Serious Creators</h2>
+                <ul>
+                    <li>Creators tired of random growth hacks</li>
+                    <li>Writers overwhelmed by unconnected ideas</li>
+                    <li>YouTubers stuck in inconsistency</li>
+                    <li>Builders who want leverage, not hustle</li>
+                </ul>
+                <p>If you think long-term, OpenThot is built for you.</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
         <section class="cta-section">
-            <div class="container cta-content">
-                <h2>Be Part of the Foundation</h2>
-                <p>We're opening our doors slowly to ensure the highest quality experience.</p>
-                <a href="https://forms.gle/REPLACE_LATER" class="btn btn-primary btn-large">Request Access</a>
+            <div class="container cta-box">
+                <h2>Mentorship That Scales With You</h2>
+                <p style="margin-bottom: 32px;">
+                    We don’t sell motivation. We build systems for creators who want durable results.
+                </p>
+                <a href="https://forms.gle/REPLACE_LATER" class="btn btn-primary">Apply for Mentorship</a>
+                <div class="hero-meta" style="margin-top: 16px;">Applications are reviewed. Acceptance is limited.</div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-content">
-            <div class="footer-logo">OpenThot</div>
-            <p class="copyright">© 2026 OpenThot Inc. Built with openness in mind.</p>
+        <div class="container">
+            <p>© 2026 OpenThot Inc. Built for creators who think long-term.</p>
         </div>
     </footer>
 
