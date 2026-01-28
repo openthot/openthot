@@ -4,30 +4,36 @@
     --color-bg-body: #ffffff;
     --color-bg-subtle: #f8fafc;
     --color-bg-surface: rgba(255, 255, 255, 0.7);
-    
-    --color-text-main: #0f172a; /* Slate 900 */
-    --color-text-muted: #64748b; /* Slate 500 */
-    --color-primary: #2563eb; /* Blue 600 */
-    --color-primary-hover: #1d4ed8;
+
+    --color-text-main: #0f172a;
+    /* Slate 900 */
+    --color-text-muted: #64748b;
+    /* Slate 500 */
+    --color-primary: #059669;
+    /* Emerald 600 */
+    --color-primary-hover: #047857;
+    /* Emerald 700 */
 
     --color-border: #e2e8f0;
-    
+
     /* Gaps & Spacing */
     --container-width: 1100px;
     --header-height: 72px;
     --radius-md: 16px;
     --radius-lg: 24px;
-    
+
     /* Shadows & Glass */
     --shadow-subtle: 0 4px 20px -2px rgba(148, 163, 184, 0.1);
     --shadow-card: 0 10px 40px -10px rgba(148, 163, 184, 0.2);
     --glass-blur: blur(16px);
-    
+
     --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,7 +53,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     letter-spacing: -0.02em;
     font-weight: 700;
     line-height: 1.1;
@@ -55,7 +64,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 3.5rem;
-    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    background: linear-gradient(135deg, #064e3b 0%, #10b981 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -81,7 +90,8 @@ a {
     transition: all 0.2s ease;
 }
 
-button, .btn {
+button,
+.btn {
     font-family: var(--font-inter);
     cursor: pointer;
     border: none;
@@ -97,8 +107,14 @@ button, .btn {
     z-index: 10;
 }
 
-.text-center { text-align: center; }
-.mx-auto { margin-left: auto; margin-right: auto; }
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Buttons */
 .btn {
@@ -106,7 +122,8 @@ button, .btn {
     align-items: center;
     justify-content: center;
     padding: 12px 28px;
-    border-radius: 99px; /* Pill shape */
+    border-radius: 99px;
+    /* Pill shape */
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.25s ease;
@@ -115,13 +132,13 @@ button, .btn {
 .btn-primary {
     background-color: var(--color-primary);
     color: white;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
 }
 
 .btn-primary:hover {
     background-color: var(--color-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 8px 16px rgba(5, 150, 105, 0.4);
 }
 
 /* Header */
@@ -187,7 +204,7 @@ button, .btn {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(37,99,235,0.08) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -203,6 +220,28 @@ button, .btn {
     text-align: center;
     position: relative;
     overflow: hidden;
+    /* Use new abstract background */
+    background: url('hero-bg.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Semi-transparent white overlay to ensure text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    /* Adjust opacity for vibrancy */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 10;
 }
 
 .hero h1 {
@@ -267,7 +306,7 @@ button, .btn {
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-card);
-    border-color: rgba(37, 99, 235, 0.2);
+    border-color: rgba(5, 150, 105, 0.2);
 }
 
 /* Audience Section */
@@ -302,7 +341,7 @@ button, .btn {
 .cta-section {
     padding: 120px 0;
     text-align: center;
-    background: linear-gradient(180deg, #fff 0%, #eff6ff 100%);
+    background: linear-gradient(180deg, #fff 0%, #ecfdf5 100%);
 }
 
 .cta-box {
@@ -321,10 +360,18 @@ button, .btn {
 
 /* Responsive */
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    .hero { padding-top: 140px; }
-    
-    .mobile-toggle { display: flex; }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        padding-top: 140px;
+    }
+
+    .mobile-toggle {
+        display: flex;
+    }
+
     .nav-links {
         position: fixed;
         top: var(--header-height);
@@ -339,11 +386,11 @@ button, .btn {
         transition: transform 0.3s ease;
         z-index: 900;
     }
-    
+
     .nav-links.active {
         transform: translateY(0);
     }
-    
+
     .nav-links .btn {
         width: 100%;
         text-align: center;
