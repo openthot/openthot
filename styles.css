@@ -9,10 +9,10 @@
     /* Slate 900 */
     --color-text-muted: #64748b;
     /* Slate 500 */
-    --color-primary: #059669;
-    /* Emerald 600 */
-    --color-primary-hover: #047857;
-    /* Emerald 700 */
+    --color-primary: #d97706;
+    /* Amber 600 */
+    --color-primary-hover: #b45309;
+    /* Amber 700 */
 
     --color-border: #e2e8f0;
 
@@ -64,7 +64,7 @@ h4 {
 
 h1 {
     font-size: 3.5rem;
-    background: linear-gradient(135deg, #064e3b 0%, #10b981 100%);
+    background: linear-gradient(135deg, #92400e 0%, #f59e0b 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -132,13 +132,13 @@ button,
 .btn-primary {
     background-color: var(--color-primary);
     color: white;
-    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
 }
 
 .btn-primary:hover {
     background-color: var(--color-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(5, 150, 105, 0.4);
+    box-shadow: 0 8px 16px rgba(217, 119, 6, 0.4);
 }
 
 /* Header */
@@ -306,7 +306,7 @@ button,
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-card);
-    border-color: rgba(5, 150, 105, 0.2);
+    border-color: rgba(217, 119, 6, 0.2);
 }
 
 /* Audience Section */
@@ -341,7 +341,7 @@ button,
 .cta-section {
     padding: 120px 0;
     text-align: center;
-    background: linear-gradient(180deg, #fff 0%, #ecfdf5 100%);
+    background: linear-gradient(180deg, #fff 0%, #fffbeb 100%);
 }
 
 .cta-box {
