@@ -255,7 +255,7 @@ button,
     font-size: 1.35rem;
     max-width: 680px;
     margin: 0 auto 40px;
-    color: var(--color-text-muted);
+    color: var(--color-text-main);
 }
 
 .hero-meta {
